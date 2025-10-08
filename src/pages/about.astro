@@ -1,5 +1,8 @@
 ---
+import "../styles/global.css";
+
 const pageTitle = "About";
+const skillColor = "orange";
 ---
 
 <html lang="en">
@@ -19,4 +22,9 @@ const pageTitle = "About";
     <h1>{pageTitle}</h1>
     <p>I'm learning Astro</p>
   </body>
+  <style define:vars={{ skillColor }}>
+    p {
+      color: var(--skillColor);
+    }
+  </style>
 </html>
