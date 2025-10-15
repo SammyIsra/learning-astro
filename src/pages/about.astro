@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import Navigation from "../components/navigation.astro";
+import Footer from "../components/footer.astro";
 
 const pageTitle = "About";
 const skillColor = "orange";
@@ -14,13 +16,10 @@ const skillColor = "orange";
     <title>{pageTitle}</title>
   </head>
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-      <a href="/blog/">Blog</a>
-    </nav>
+    <Navigation />
     <h1>{pageTitle}</h1>
     <p>I'm learning Astro</p>
+    <Footer />
   </body>
   <style define:vars={{ skillColor }}>
     p {
